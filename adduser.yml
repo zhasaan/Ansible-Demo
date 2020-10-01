@@ -1,5 +1,6 @@
 ---
-- name: Add user 'johnd' with a specific uid and a group
+- name: Add user johnd with a specific uid and a group
+  hosts: all
   user:
     name: johnd
     comment: John Doe
