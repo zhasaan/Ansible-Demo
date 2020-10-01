@@ -1,0 +1,7 @@
+---
+- name: Add user 'johnd' with a specific uid and a group
+  user:
+    name: johnd
+    comment: John Doe
+    uid: 1040
+    group: admin
