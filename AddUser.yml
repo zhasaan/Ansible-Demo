@@ -1,12 +1,15 @@
 ---
-- name: Add user with a specific uid and a group
+- name: Add a user with specific uid and gid and create a pair of SSH keys
   hosts: all
 
   tasks:
 
-  - name: Add johnd user
-    user:
-      name: johnd
-      comment: John Doe
+  - name: creste user jsmith and 2048 bit SSH keys for user jsmith in ~jsmith/.ssh/ directory
+  user:
+      name: jsmith
       uid: 1040
       group: admin
+      comment: John Smith
+      generate_ssh_key: yes
+      ssh_key_bits: 2048
+      ssh_key_file: .ssh/id_rsa
