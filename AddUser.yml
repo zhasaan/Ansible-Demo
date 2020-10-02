@@ -1,8 +1,10 @@
 ---
 - name: Add user with a specific uid and a group
   hosts: all
+
   tasks:
-  - Add johnd user
+
+  - name: Add johnd user
     user:
       name: johnd
       comment: John Doe
