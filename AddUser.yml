@@ -4,7 +4,7 @@
 
   tasks:
 
-  - name: creste user jsmith and 2048 bit SSH keys for user jsmith in ~jsmith/.ssh/ directory
+  - name: creste user jsmith and 2048 bit SSH keys for user jsmith
   user:
       name: jsmith
       uid: 1040
