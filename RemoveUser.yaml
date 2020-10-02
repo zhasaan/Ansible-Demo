@@ -1,0 +1,11 @@
+---
+- name: Remove user with a specific uid and a group
+  hosts: all
+
+  tasks:
+
+  - name: Remove johnd user
+    user:
+      name: johnd
+      state: absent
+      remove: yes
