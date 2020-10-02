@@ -4,8 +4,8 @@
 
   tasks:
 
-  - name: Remove johnd user
+  - name: Remove user jsmith
     user:
-      name: johnd
+      name: jsmith
       state: absent
       remove: yes
